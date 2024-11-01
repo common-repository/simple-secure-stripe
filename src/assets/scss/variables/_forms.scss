@@ -1,0 +1,38 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Forms - Colors
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-form-color-background: var(--sswp-color-background);
+	--sswp-form-color-border-default: var(--sswp-color-text-primary);
+	--sswp-form-color-border-active: var(--sswp-color-accent-secondary);
+	--sswp-form-color-border-secondary: var(--sswp-color-border-tertiary);
+	--sswp-form-color-accent-primary: var(--sswp-color-accent-primary);
+
+	/* -----------------------------------------------------------------------------
+	 * Forms - Box Shadows
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-form-box-shadow-default: var(--sswp-box-shadow-default);
+
+	/* -----------------------------------------------------------------------------
+	 * For backwards Compatibility with plugins that have not been updated yet.
+	 * Remove these once all plugins have been updated to use the namespaced vars.
+	 * ----------------------------------------------------------------------------- */
+
+	/* -----------------------------------------------------------------------------
+	 * Forms - Colors
+	 * ----------------------------------------------------------------------------- */
+
+	--form-color-background: var(--sswp-form-color-background);
+	--form-color-border-default: var(--sswp-form-color-border-default);
+	--form-color-border-active: var(--sswp-form-color-border-active);
+	--form-color-border-secondary: var(--sswp-form-color-border-secondary);
+	--form-color-accent-primary: var(--sswp-form-color-accent-primary);
+
+	/* -----------------------------------------------------------------------------
+	 * Forms - Box Shadows
+	 * ----------------------------------------------------------------------------- */
+
+	--form-box-shadow-default: var(--sswp-form-box-shadow-default);
+}

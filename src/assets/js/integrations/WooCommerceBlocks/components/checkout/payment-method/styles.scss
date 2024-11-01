@@ -1,0 +1,9 @@
+.sswps-blocks-payment-method__desc {
+  + .sswps-blocks-payment-method-content {
+    margin-top: 10px;
+
+    &.no-content {
+      margin-top: 0;
+    }
+  }
+}

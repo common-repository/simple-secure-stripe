@@ -1,0 +1,39 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Font Stacks
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-font-family-sans-serif: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
+
+	/* -----------------------------------------------------------------------------
+	 * Font Weights
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-font-weight-regular: 400;
+	--sswp-font-weight-bold: 700;
+
+	/* -----------------------------------------------------------------------------
+	 * Font Sizing
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-font-size-0: 11px;
+	--sswp-font-size-1: 12px;
+	--sswp-font-size-2: 14px;
+	--sswp-font-size-3: 16px;
+	--sswp-font-size-4: 18px;
+	--sswp-font-size-5: 20px;
+	--sswp-font-size-6: 22px;
+	--sswp-font-size-7: 24px;
+	--sswp-font-size-8: 28px;
+	--sswp-font-size-9: 32px;
+	--sswp-font-size-10: 42px;
+
+	/* -----------------------------------------------------------------------------
+	 * Line Height
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-line-height-0: 1.38;
+	--sswp-line-height-1: 1.42;
+	--sswp-line-height-2: 1.5;
+	--sswp-line-height-3: 1.62;
+}

@@ -1,0 +1,17 @@
+.sswps-admin__page {
+	padding: 0 var(--sswp-spacer-admin-0) var(--sswp-spacer-5) 0;
+
+	@media only screen and (min-width: $viewport-full) {
+		padding-right: var(--sswp-spacer-admin-1);
+	}
+}
+
+.sswps-admin__page-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media only screen and (min-width: $viewport-medium) {
+		padding-top: var(--sswp-spacer-5);
+	}
+}

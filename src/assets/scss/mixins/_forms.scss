@@ -1,0 +1,38 @@
+/* -----------------------------------------------------------------------------
+ * Sliders & Toggles
+ * ----------------------------------------------------------------------------- */
+
+@mixin form-control-slider-toggle-track {
+	border: none;
+	border-radius: 5px;
+	height: 10px;
+	margin: 5px 0;
+	padding: 0;
+	position: relative;
+	transition: var(--sswp-transition-background-color);
+}
+
+@mixin form-control-slider-toggle-thumb {
+	background-color: var(--sswp-form-color-background);
+	border: 1px solid var(--sswp-form-color-border-secondary);
+	border-radius: 50%;
+	box-shadow: var(--sswp-form-box-shadow-default);
+	height: 20px;
+	width: 20px;
+}
+
+/* -----------------------------------------------------------------------------
+ * Sliders
+ * ----------------------------------------------------------------------------- */
+
+@mixin form-control-slider-track {
+	@include form-control-slider-toggle-track;
+
+	background-color: var(--sswp-form-color-accent-primary);
+}
+
+@mixin form-control-slider-thumb {
+	@include form-control-slider-toggle-thumb;
+
+	margin-top: -5px;
+}

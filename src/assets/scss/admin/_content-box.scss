@@ -1,0 +1,42 @@
+.sswps-admin__content-box {
+	background-color: #fff;
+	border-radius: var(--sswp-border-radius-default);
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	margin: 0 auto var(--sswp-spacer-5) auto;
+	max-width: 100%;
+	padding: var(--sswp-spacer-5);
+	width: 790px;
+
+	h2 {
+		flex-grow: 1;
+		margin-top: 0;
+	}
+
+	header {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.sswp-button--primary {
+		margin-right: var(--sswp-spacer-1);
+	}
+}
+
+.sswps-admin__content-box-actions {
+	a,
+	fieldset {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	p,
+	legend,
+	& > label {
+		display: none;
+	}
+}
+
+.sswps-admin__content-box .sswps-mode__pill {
+	margin-right: 0;
+}

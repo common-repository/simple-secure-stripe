@@ -1,0 +1,18 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Layers of z-index
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-z-index-spinner-container: 100;
+	--sswp-z-index-views-selector: 30;
+	--sswp-z-index-dropdown: 30;
+	--sswp-z-index-events-bar-button: 20;
+	--sswp-z-index-search: 10;
+	--sswp-z-index-filters: 9;
+	--sswp-z-index-scroller: 7;
+	--sswp-z-index-week-event-hover: 5;
+	--sswp-z-index-map-event-hover: 5;
+	--sswp-z-index-map-event-hover-actions: 6;
+	--sswp-z-index-multiday-event: 5;
+	--sswp-z-index-multiday-event-bar: 2;
+}

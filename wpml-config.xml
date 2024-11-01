@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wpml-config>
+    <admin-texts>
+        <key name="sswps_cc_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_googlepay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_applepay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_payment_request_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_ach_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_bancontact_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_eps_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_giropay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_ideal_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_klarna_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_multibanco_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_p24_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_sepa_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_sofort_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_wechat_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_afterpay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_affirm_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_alipay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_becs_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_boleto_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_fpx_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_grabpay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_oxxo_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_konbini_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_paynow_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="sswps_blik_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+    </admin-texts>
+</wpml-config>

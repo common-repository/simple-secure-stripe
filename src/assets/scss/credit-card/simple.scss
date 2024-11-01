@@ -1,0 +1,166 @@
+@import "../utils/directional";
+
+$color_1: #cfd7df;
+$color_2: #32325d;
+$color_3: transparent;
+$color_4: #aab7c4;
+$color_5: #24b47e;
+$color_6: #ffa27b;
+$font-family_1: Source Code Pro,Consolas,Menlo,monospace;
+$background-color_1: #fff;
+$background-color_2: #cfd7df;
+$background-color_3: transparent;
+$background-color_4: #24b47e;
+$background-color_5: #e25950;
+
+.sswps-simple-form {
+	background-color: $background-color_1;
+	padding: 10px 0;
+	* {
+		box-sizing: border-box;
+		font-family: $font-family_1;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.StripeElement {
+		padding-left: 0;
+	}
+	.row {
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		&:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+	.field {
+		display: flex;
+		height: 50px;
+		margin: 0;
+		position: relative;
+		width: 100%;
+		.field-item {
+			position: relative;
+			width: 100%;
+		}
+	}
+	.field.half-width {
+		width: 50%;
+		&:nth-child(2n) {
+			.field-item {
+				margin: 0 0 0 10px;
+			}
+		}
+		&:nth-child(odd) {
+			.field-item {
+				margin: 0 10px 0 0;
+			}
+		}
+	}
+	.baseline {
+		background-color: $background-color_2;
+		bottom: 0;
+		height: 1px;
+		left: 0;
+		position: absolute;
+		transition: background-color .3s cubic-bezier(.165,.84,.44,1);
+		width: 100%;
+	}
+	label {
+		bottom: 8px;
+		color: $color_1;
+		cursor: text;
+		left: 0;
+		margin-bottom: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		text-overflow: ellipsis;
+		transform-origin: 0 50%;
+		transition-duration: .3s;
+		transition-property: color,transform;
+		transition-timing-function: cubic-bezier(.165,.84,.44,1);
+		white-space: nowrap;
+		width: 100%;
+	}
+	.input {
+		background-color: $background-color_3;
+		bottom: 0;
+		color: $color_2;
+		left: 0;
+		padding-bottom: 7px;
+		position: absolute;
+		width: 100%;
+		&::-moz-placeholder {
+			color: $color_3;
+			transition: color .3s cubic-bezier(.165,.84,.44,1);
+		}
+		&::-webkit-input-placeholder {
+			color: $color_3;
+			transition: color .3s cubic-bezier(.165,.84,.44,1);
+		}
+		&:not(.empty) {
+			opacity: 1;
+		}
+		&:not(.empty)+label {
+			color: $color_4;
+			cursor: default;
+			transform: scale(.85) translateY(-25px);
+		}
+	}
+	.input.StripeElement {
+		opacity: 0;
+		transition: opacity .3s cubic-bezier(.165,.84,.44,1);
+		will-change: opacity;
+	}
+	.input.focused {
+		opacity: 1;
+	}
+	.input.focused+label {
+		color: $color_4;
+		cursor: default;
+		transform: scale(.85) translateY(-25px);
+		color: $color_5;
+	}
+	.input.focused+label+.baseline {
+		background-color: $background-color_4;
+	}
+	.input.invalid+label {
+		color: $color_6;
+	}
+	.input.invalid+label+.baseline {
+		background-color: $background-color_5;
+	}
+}
+.small-form {
+	.sswps-simple-form {
+		.field.half-width {
+			width: 100%;
+			&:nth-child(2n) {
+				.field-item {
+					margin: 0;
+				}
+			}
+			&:nth-child(odd) {
+				.field-item {
+					margin: 0;
+				}
+			}
+		}
+		.cvc {
+			margin-top: 10px;
+		}
+	}
+}
+.sswps-blocks-payment-method__desc.sswps_cc {
+	p {
+		margin: 0;
+	}
+}
+@media (min-width:475px) {
+	.sswps-simple-form {
+		.field.half-width {
+			width: 50%;
+		}
+	}
+}

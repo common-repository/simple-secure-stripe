@@ -1,0 +1,10 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Box Shadows
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-box-shadow-default: 0 2px 5px 0 var(--sswp-color-box-shadow);
+	--sswp-box-shadow-tooltip: 0 2px 12px 0 var(--sswp-color-box-shadow);
+	--sswp-box-shadow-card: 0 1px 6px 2px var(--sswp-color-box-shadow);
+
+}

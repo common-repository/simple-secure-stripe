@@ -1,0 +1,14 @@
+:root {
+	/* -----------------------------------------------------------------------------
+	 * Transitions
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-transition: all 0.2s ease;
+	--sswp-transition-background-color: background-color 0.2s ease;
+	--sswp-transition-color-border-color: color 0.2s ease, border-color 0.2s ease;
+	--sswp-transition-transform: transform 0.2s ease;
+	--sswp-transition-border-color: border-color 0.2s ease;
+	--sswp-transition-color: color 0.2s ease;
+	--sswp-transition-opacity: opacity 0.2s ease;
+
+}

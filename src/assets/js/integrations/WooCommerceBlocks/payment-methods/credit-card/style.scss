@@ -1,0 +1,28 @@
+.sswps-inline-form {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 10px 8px;
+}
+
+.sswps-card-container,
+.sswps-save-payment-method {
+  + .wc-block-components-payment-methods__save-card-info {
+    display: none;
+  }
+}
+
+.sswps-custom-form-error {
+  color: #cc1818;
+  width: 100%;
+  font-size: 16px;
+}
+
+.sswps-custom-form {
+  .sswps-card {
+    width: 32px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 7px
+  }
+}

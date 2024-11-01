@@ -1,0 +1,109 @@
+/* -----------------------------------------------------------------------------
+ * Button - Global
+ * ----------------------------------------------------------------------------- */
+
+@mixin button-global {
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	height: auto;
+	padding: 0;
+	text-decoration: none;
+	width: auto;
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Solid
+ * ----------------------------------------------------------------------------- */
+
+@mixin button-solid {
+	@include desktop-body-2-bold;
+	@include button-global;
+
+	border-radius: var(--sswp-border-radius-default);
+	color: var(--sswp-color-background);
+	text-align: center;
+	transition: var(--sswp-transition-background-color);
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Link
+ * ----------------------------------------------------------------------------- */
+
+@mixin button-link {
+	@include desktop-body-2;
+	@include button-global;
+
+	background-color: transparent;
+	text-align: center;
+	text-decoration: underline;
+	transition: var(--sswp-transition-color);
+
+	&:hover,
+	&:focus {
+		background-color: transparent;
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Border
+ * ----------------------------------------------------------------------------- */
+
+@mixin button-border {
+	@include desktop-body-2-bold;
+	@include button-global;
+
+	background-color: var(--sswp-color-background);
+	border: 1px solid var(--sswp-color-accent-primary);
+	border-radius: var(--sswp-border-radius-default);
+	text-align: center;
+	transition: var(--sswp-transition);
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Border Small
+ * ----------------------------------------------------------------------------- */
+
+@mixin button-border-small {
+	@include desktop-body-3;
+	@include button-global;
+
+	background-color: var(--sswp-color-background);
+	border: 1px solid var(--sswp-color-border-default);
+	border-radius: var(--sswp-border-radius-default);
+	text-align: center;
+	transition: var(--sswp-transition-color-border-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--sswp-color-background);
+	}
+
+	&:active {
+		border-color: var(--sswp-color-border-active);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Icon Border
+ * ----------------------------------------------------------------------------- */
+
+@mixin button-icon-border {
+	align-items: center;
+	background-color: var(--sswp-color-background);
+	border: 1px solid var(--sswp-color-border-default);
+	display: inline-flex;
+	height: 56px;
+	justify-content: center;
+	transition: none;
+	width: 56px;
+
+	&:hover,
+	&:focus {
+		background-color: var(--sswp-color-background);
+	}
+
+	&:active {
+		border-color: var(--sswp-color-border-active);
+	}
+}

@@ -1,0 +1,30 @@
+#cfw-payment-request-buttons .sswps-banner-checkout {
+  overflow: visible;
+  max-height: none;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout fieldset legend {
+  display: none;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout fieldset .sswps_checkout_banner_gateways {
+  display: flex;
+  flex-wrap: wrap;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout fieldset .sswps_checkout_banner_gateways .banner_payment_method_sswps_applepay {
+  min-width: 140px !important;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout fieldset .sswps_checkout_banner_gateways .banner_payment_method_sswps_applepay button {
+  width: 100% !important;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout fieldset .sswps_checkout_banner_gateways .sswps-checkout-banner-gateway {
+  margin: 0;
+}
+#cfw-payment-request-buttons .sswps-banner-checkout .banner-divider {
+  display: none;
+}
+
+/*# sourceMappingURL=checkoutwc-styles.css.map */

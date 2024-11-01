@@ -1,0 +1,52 @@
+.sswp-button--primary {
+	@include button-solid;
+
+	background: var(--sswp-color-brand-stripe);
+	padding: var(--sswp-spacer-2) var(--sswp-spacer-4);
+
+	&:active {
+		background: var(--sswp-color-brand-primary-active);
+		color: #fff;
+	}
+
+	&:hover {
+		background: var(--sswp-color-brand-primary-hover);
+		color: #fff;
+	}
+}
+
+.sswp-button--disconnect {
+	@include button-link;
+
+	color: var(--sswp-color-button-disconnect);
+
+	&:active {
+		color: var(--sswp-color-button-disconnect-active);
+	}
+
+	&:hover {
+		color: var(--sswp-color-button-disconnect-active);
+	}
+}
+
+.sswp-button--secondary {
+	@include button-solid;
+
+	background: var(--sswp-color-button-secondary);
+	border: 1px solid var(--sswp-color-button-secondary-border);
+	color: var(--sswp-color-text-primary);
+	margin-right: var(--sswp-spacer-2);
+	padding: var(--sswp-spacer-2) var(--sswp-spacer-4);
+
+	&:active {
+		background-color: var(--sswp-color-button-secondary-active);
+	}
+
+	&:hover {
+		background-color: var(--sswp-color-button-secondary-active);
+	}
+}
+
+.sswp-button--connection-test {
+	margin-right: var(--sswp-spacer-2);
+}

@@ -1,0 +1,299 @@
+/* -----------------------------------------------------------------------------
+ * Body
+ * ----------------------------------------------------------------------------- */
+
+@mixin body {
+	color: var(--sswp-color-text-primary);
+	font-family: var(--sswp-font-family-sans-serif);
+}
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 1
+ * ----------------------------------------------------------------------------- */
+
+@mixin desktop-body-1-sup {
+	font-size: var(--sswp-font-size-3);
+	line-height: var(--sswp-line-height-3);
+}
+
+@mixin desktop-body-1 {
+	@include body;
+	@include desktop-body-1-sup;
+
+	font-weight: var(--sswp-font-weight-regular);
+}
+
+@mixin desktop-body-1-bold {
+	@include desktop-body-1;
+
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 2
+ * ----------------------------------------------------------------------------- */
+
+@mixin desktop-body-2-sup {
+	font-size: var(--sswp-font-size-2);
+	line-height: var(--sswp-line-height-3);
+}
+
+@mixin desktop-body-2 {
+	@include body;
+	@include desktop-body-2-sup;
+
+	font-weight: var(--sswp-font-weight-regular);
+}
+
+@mixin desktop-body-2-bold {
+	@include desktop-body-2;
+
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Desktop Body 3
+ * ----------------------------------------------------------------------------- */
+
+@mixin desktop-body-3-sup {
+	font-size: var(--sswp-font-size-1);
+	line-height: var(--sswp-line-height-0);
+}
+
+@mixin desktop-body-3 {
+	@include body;
+	@include desktop-body-3-sup;
+
+	font-weight: var(--sswp-font-weight-regular);
+}
+
+@mixin desktop-body-3-bold {
+	@include desktop-body-3;
+
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 1
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-body-1 {
+	@include body;
+
+	font-size: var(--sswp-font-size-2);
+	font-weight: var(--sswp-font-weight-regular);
+	line-height: var(--sswp-line-height-3);
+}
+
+@mixin mobile-body-1-bold {
+	@include mobile-body-1;
+
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 2
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-body-2 {
+	@include body;
+
+	font-size: var(--sswp-font-size-1);
+	font-weight: var(--sswp-font-weight-regular);
+	line-height: var(--sswp-line-height-0);
+}
+
+@mixin mobile-body-2-bold {
+	@include mobile-body-2;
+
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Mobile Body 3
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-body-3 {
+	@include body;
+
+	font-size: var(--sswp-font-size-0);
+	font-weight: var(--sswp-font-weight-regular);
+	line-height: var(--sswp-line-height-2);
+}
+
+@mixin mobile-body-3-bold {
+	@include mobile-body-3;
+
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading
+ * ----------------------------------------------------------------------------- */
+
+@mixin heading {
+	color: var(--sswp-color-text-primary);
+	font-family: var(--sswp-font-family-sans-serif);
+	font-weight: var(--sswp-font-weight-bold);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 1
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-heading-1 {
+	font-size: var(--sswp-font-size-8);
+	line-height: var(--sswp-line-height-1);
+}
+
+@mixin desktop-heading-1 {
+	font-size: var(--sswp-font-size-10);
+	line-height: var(--sswp-line-height-0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 2
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-heading-2 {
+  font-size: var(--sswp-font-size-7);
+  line-height: var(--sswp-line-height-1);
+}
+
+@mixin desktop-heading-2 {
+  font-size: var(--sswp-font-size-9);
+  line-height: var(--sswp-line-height-0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 3
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-heading-3 {
+  font-size: var(--sswp-font-size-6);
+  line-height: var(--sswp-line-height-2);
+}
+
+@mixin desktop-heading-3 {
+  font-size: var(--sswp-font-size-8);
+  line-height: var(--sswp-line-height-1);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 4
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-heading-4 {
+  font-size: var(--sswp-font-size-5);
+  line-height: var(--sswp-line-height-1);
+}
+
+@mixin desktop-heading-4 {
+  font-size: var(--sswp-font-size-7);
+  line-height: var(--sswp-line-height-1);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 5
+ * ----------------------------------------------------------------------------- */
+
+@mixin heading-5 {
+  font-size: var(--sswp-font-size-4);
+  line-height: var(--sswp-line-height-2);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 6
+ * ----------------------------------------------------------------------------- */
+
+@mixin mobile-heading-6 {
+  font-size: var(--sswp-font-size-3);
+  line-height: var(--sswp-line-height-2);
+}
+
+@mixin desktop-heading-6 {
+  font-size: var(--sswp-font-size-3);
+  line-height: var(--sswp-line-height-3);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 7
+ * ----------------------------------------------------------------------------- */
+
+@mixin heading-7 {
+  font-size: var(--sswp-font-size-2);
+  line-height: var(--sswp-line-height-3);
+}
+
+/* -----------------------------------------------------------------------------
+ * Heading 8
+ * ----------------------------------------------------------------------------- */
+
+@mixin heading-8 {
+  font-size: var(--sswp-font-size-1);
+  line-height: var(--sswp-line-height-0);
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Default
+ * ----------------------------------------------------------------------------- */
+
+@mixin anchor-default {
+  border-bottom: 2px solid transparent;
+  transition: var(--sswp-transition-border-color);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: 2px solid currentColor;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Alt
+ * ----------------------------------------------------------------------------- */
+
+@mixin anchor-alt {
+  border-bottom: 2px solid var(--sswp-color-link-accent);
+  color: var(--sswp-color-link-primary);
+  transition: var(--sswp-transition-color);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: 2px solid currentColor;
+    color: var(--sswp-color-link-accent);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+
+@mixin anchor-thin {
+  border-bottom: 1px solid transparent;
+  transition: var(--sswp-transition-border-color);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid var(--sswp-color-link-primary);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin Alt
+ * ----------------------------------------------------------------------------- */
+
+@mixin anchor-thin-alt {
+  border-bottom: 1px solid var(--sswp-color-link-accent);
+  color: var(--sswp-color-link-primary);
+  transition: var(--sswp-transition-color);
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: 1px solid currentColor;
+    color: var(--sswp-color-link-accent);
+  }
+}

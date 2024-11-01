@@ -1,0 +1,43 @@
+#cfw-payment-request-buttons {
+  .sswps-banner-checkout {
+    overflow: visible;
+    max-height: none;
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      legend {
+        display: none;
+      }
+
+      .sswps_checkout_banner_gateways {
+        display: flex;
+        flex-wrap: wrap;
+
+        .banner_payment_method_sswps_googlepay {
+          button {
+            //padding: 0;
+          }
+        }
+
+        .banner_payment_method_sswps_applepay {
+          min-width: 140px !important;
+
+          button {
+            width: 100% !important;
+          }
+        }
+
+        .sswps-checkout-banner-gateway {
+          margin: 0;
+        }
+      }
+    }
+
+    .banner-divider {
+      display: none;
+    }
+  }
+}

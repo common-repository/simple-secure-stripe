@@ -1,0 +1,140 @@
+.sswps-simple-form {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.sswps-simple-form * {
+  box-sizing: border-box;
+  font-family: Source Code Pro, Consolas, Menlo, monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sswps-simple-form .StripeElement {
+  padding-left: 0;
+}
+.sswps-simple-form .row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sswps-simple-form .row:first-of-type {
+  margin-bottom: 10px;
+}
+.sswps-simple-form .field {
+  display: flex;
+  height: 50px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+.sswps-simple-form .field .field-item {
+  position: relative;
+  width: 100%;
+}
+.sswps-simple-form .field.half-width {
+  width: 50%;
+}
+.sswps-simple-form .field.half-width:nth-child(2n) .field-item {
+  margin: 0 0 0 10px;
+}
+.sswps-simple-form .field.half-width:nth-child(odd) .field-item {
+  margin: 0 10px 0 0;
+}
+.sswps-simple-form .baseline {
+  background-color: #cfd7df;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+.sswps-simple-form label {
+  bottom: 8px;
+  color: #cfd7df;
+  cursor: text;
+  left: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-overflow: ellipsis;
+  transform-origin: 0 50%;
+  transition-duration: 0.3s;
+  transition-property: color, transform;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  white-space: nowrap;
+  width: 100%;
+}
+.sswps-simple-form .input {
+  background-color: transparent;
+  bottom: 0;
+  color: #32325d;
+  left: 0;
+  padding-bottom: 7px;
+  position: absolute;
+  width: 100%;
+}
+.sswps-simple-form .input::-moz-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sswps-simple-form .input::-webkit-input-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sswps-simple-form .input:not(.empty) {
+  opacity: 1;
+}
+.sswps-simple-form .input:not(.empty) + label {
+  color: #aab7c4;
+  cursor: default;
+  transform: scale(0.85) translateY(-25px);
+}
+.sswps-simple-form .input.StripeElement {
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity;
+}
+.sswps-simple-form .input.focused {
+  opacity: 1;
+}
+.sswps-simple-form .input.focused + label {
+  color: #aab7c4;
+  cursor: default;
+  transform: scale(0.85) translateY(-25px);
+  color: #24b47e;
+}
+.sswps-simple-form .input.focused + label + .baseline {
+  background-color: #24b47e;
+}
+.sswps-simple-form .input.invalid + label {
+  color: #ffa27b;
+}
+.sswps-simple-form .input.invalid + label + .baseline {
+  background-color: #e25950;
+}
+
+.small-form .sswps-simple-form .field.half-width {
+  width: 100%;
+}
+.small-form .sswps-simple-form .field.half-width:nth-child(2n) .field-item {
+  margin: 0;
+}
+.small-form .sswps-simple-form .field.half-width:nth-child(odd) .field-item {
+  margin: 0;
+}
+.small-form .sswps-simple-form .cvc {
+  margin-top: 10px;
+}
+
+.sswps-blocks-payment-method__desc.sswps_cc p {
+  margin: 0;
+}
+
+@media (min-width: 475px) {
+  .sswps-simple-form .field.half-width {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=simple-rtl.css.map */

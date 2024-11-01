@@ -1,0 +1,21 @@
+.sswps-label-container {
+  &.stripe_ach {
+    img {
+      &.wc-block-components-payment-method-icon--stripe_ach {
+        height: 30px;
+        max-height: 30px;
+        object-fit: fill;
+        width: 30px;
+      }
+
+    }
+  }
+}
+
+.sswps-blocks-ach__creds {
+  margin-top: 10px;
+
+  .sswps-blocks-ach__creds-label {
+    font-weight: 700;
+  }
+}

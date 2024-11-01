@@ -1,0 +1,2 @@
+(()=>{var s;(s=jQuery)((function(){s(".tribe-dismiss-notice.is-dismissible").on("click",".notice-dismiss",(function(){var i=function(s,i,t){var e=s.indexOf("#"),n=-1===e?"":s.substr(e);s=-1===e?s:s.substr(0,e);var a=new RegExp("([?&])"+i+"=.*?(&|$)","i"),r=-1!==s.indexOf("?")?"&":"?";return(s=s.match(a)?s.replace(a,"$1"+i+"="+t+"$2"):s+r+i+"="+t)+n}(ajaxurl,"sswps-dismiss-notice",s(this).parents(".sswps-dismiss-notice").data("ref"));s.ajax(i,{dataType:"json",method:"POST",data:{action:"sswps_notice_dismiss"}})}))}))})();
+//# sourceMappingURL=notice-dismiss.js.map

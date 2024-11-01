@@ -1,0 +1,84 @@
+:root {
+	/* --------------------------------------------------------
+	 * Colors - Brand
+	 * -------------------------------------------------------- */
+	 --sswp-color-brand-primary: #699bff;
+	 --sswp-color-brand-secondary: #ffff99;
+	 --sswp-color-brand-stripe: #635bff;
+
+	/* --------------------------------------------------------
+	 * Colors - Mode
+	 * -------------------------------------------------------- */
+	 --sswp-color-mode-live: #00A32A;
+	 --sswp-color-mode-test: #c84801;
+	 --sswp-color-error: #d63638;
+
+	/* --------------------------------------------------------
+	 * Colors - Typography
+	 * -------------------------------------------------------- */
+	 --sswp-color-text-primary: #1d2327;
+	 --sswp-color-text-primary-light: #646970;
+	 --sswp-color-text-secondary: #5d5d5d;
+	 --sswp-color-text-disabled: #d5d5d5;
+
+	/* -----------------------------------------------------------------------------
+	 * Colors - UI Base
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-color-brand-primary-hover: #4641b9;
+	--sswp-color-brand-primary-active: #383395;
+	--sswp-color-brand-primary-background: rgba(40, 81, 163, 0.07);
+	--sswp-color-accent-primary: #ffff99;
+	--sswp-color-accent-primary-hover: rgba(255, 255, 153, 0.8);
+	--sswp-color-accent-primary-active: rgba(255, 255, 153, 0.9);
+	--sswp-color-accent-primary-background: rgba(255, 255, 153, 0.07);
+	--sswp-color-accent-secondary: #ffb6c1;
+	--sswp-color-accent-secondary-hover: rgba(255, 182, 193, 0.8);
+	--sswp-color-accent-secondary-active: rgba(255, 182, 193, 0.9);
+	--sswp-color-accent-secondary-background: rgba(255, 182, 193, 0.07);
+
+
+	/* -----------------------------------------------------------------------------
+	 * Colors - Buttons
+	 * ----------------------------------------------------------------------------- */
+	--sswp-color-button-primary: var(--sswp-color-brand-primary);
+	--sswp-color-button-primary-hover: var(--sswp-color-brand-primary-hover);
+	--sswp-color-button-primary-active: var(--sswp-color-brand-primary-active);
+	--sswp-color-button-primary-background: var(--sswp-color-brand-primary-background);
+	--sswp-color-button-secondary: #f5f5f5;
+	--sswp-color-button-secondary-border: #bbb;
+	--sswp-color-button-secondary-hover: #d5d5d5;
+	--sswp-color-button-secondary-active: #ddd;
+	--sswp-color-button-disconnect: #d63638;
+	--sswp-color-button-disconnect-hover: rgba(179, 45, 46, 1);
+	--sswp-color-button-disconnect-active: rgba(179, 45, 46, 1);
+	--sswp-color-button-disconnect-background: rgba(179, 45, 46, 0.07);
+
+	/* -----------------------------------------------------------------------------
+	 * Colors - Borders & Misc
+	 * ----------------------------------------------------------------------------- */
+
+	--sswp-color-border-default: #c3c4c7;
+	--sswp-color-border-secondary: #e4e4e4;
+	--sswp-color-border-light: #ebebeb;
+	--sswp-color-border-tertiary: #7d7d7d;
+	--sswp-color-border-hover: #5d5d5d;
+	--sswp-color-border-active: #141827;
+	--sswp-color-background: #fff;
+	--sswp-color-background-events: transparent;
+	--sswp-color-background-transparent: rgba(255, 255, 255, 0.6);
+	--sswp-color-background-secondary: #f7f6f6;
+	--sswp-color-background-messages: rgba(20, 24, 39, 0.07);
+	--sswp-color-background-secondary-hover: #f0eeee;
+	--sswp-color-background-error: rgba(218, 57, 77, 0.08);
+	--sswp-color-box-shadow: rgba(#000, 0.14);
+	--sswp-color-box-shadow-secondary: rgba(#000, 0.1);
+	--sswp-color-scroll-track: rgba(#000, 0.25);
+	--sswp-color-scroll-bar: rgba(#000, 0.5);
+	--sswp-color-background-dark: #2c3338;
+
+	/* -----------------------------------------------------------------------------
+	 * Colors - Tabs
+	 * ----------------------------------------------------------------------------- */
+	 --sswp-color-tab-active: #fff;
+}

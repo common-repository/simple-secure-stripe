@@ -1,0 +1,2 @@
+!function(s){function n(n){s(n.currentTarget).closest(".sswps-notice").remove()}s(document.body).on("click","#sswps-signup",(function(n){n.preventDefault(),submitSigupData(s(n.currentTarget))})).on("click",".sswps-notice .dismiss",n)}(jQuery);
+//# sourceMappingURL=main.js.map

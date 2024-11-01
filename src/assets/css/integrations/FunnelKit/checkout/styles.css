@@ -1,0 +1,36 @@
+.wfacp_smart_buttons .wfacp_smart_button_outer_buttons .sswps-checkout-banner-gateway:not(active) {
+  display: none;
+}
+.wfacp_smart_buttons .wfacp_smart_button_outer_buttons.wfacp_button_count_1 .sswps-wfacp-express-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wfacp_smart_buttons .wfacp_smart_button_outer_buttons.wfacp_button_count_1 .sswps-wfacp-express-buttons .sswps-checkout-banner-gateway {
+  margin: 0 5px;
+  max-width: 240px;
+}
+.wfacp_smart_buttons .wfacp_smart_button_outer_buttons.wfacp_button_count_1 .sswps-wfacp-express-buttons .sswps-checkout-banner-gateway #sswps-payment-request-banner {
+  min-width: 240px;
+}
+@media (max-width: 575px) {
+  .wfacp_smart_buttons .wfacp_smart_button_outer_buttons.wfacp_button_count_1 .sswps-wfacp-express-buttons {
+    flex-wrap: wrap;
+  }
+  .wfacp_smart_buttons .wfacp_smart_button_outer_buttons.wfacp_button_count_1 .sswps-wfacp-express-buttons .sswps-checkout-banner-gateway {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .wfacp_smart_buttons .wfacp_smart_button_outer_buttons.wfacp_button_count_1 .sswps-wfacp-express-buttons .sswps-checkout-banner-gateway:nth-child(n+2) {
+    margin: 10px 0 0 0;
+  }
+}
+
+#wfacp-e-form li.sswps-checkout-banner-gateway {
+  margin: 0 5px;
+}
+#wfacp-e-form .wfacp_smart_buttons .wfacp_smart_button_outer_buttons:not(.wfacp_button_count_1) .sswps-checkout-banner-gateway {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

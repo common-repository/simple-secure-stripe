@@ -1,0 +1,1428 @@
+@keyframes klarna-payments-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes installment-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sswps-card-icons-container {
+  float: right;
+  display: inline-block;
+}
+
+.sswps-paymentRequest-icons-container {
+  float: right;
+  display: inline-block;
+}
+.sswps-paymentRequest-icons-container img {
+  float: none;
+}
+
+ul.payment_methods {
+  list-style: none;
+}
+ul.payment_methods li[class*=payment_method] {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 10px 0;
+}
+ul.payment_methods li[class*=payment_method] input[name=payment_method] {
+  margin: 0 10px 0 5px;
+  float: none;
+}
+ul.payment_methods li[class*=payment_method] > input[name=payment_method] + label {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+ul.payment_methods li[class*=payment_method_sswps_]:nth-child(n+2) {
+  margin: 0;
+}
+ul.payment_methods label > img:first-of-type {
+  float: right !important;
+}
+ul.payment_methods .sswps_cc-new-method-container label:before {
+  display: none;
+}
+ul.payment_methods label[for*=payment_method_sswps]:after {
+  clear: right;
+  content: "";
+  display: block;
+}
+ul.payment_methods li.payment_method_sswps_boleto img {
+  max-width: 90px;
+  width: 90px;
+  max-height: 45px;
+}
+ul.payment_methods li.payment_method_sswps_p24 img {
+  max-width: 90px;
+  width: 90px;
+  max-height: 45px;
+}
+ul.payment_methods li.payment_method_sswps_ideal img {
+  max-width: 38px;
+  width: 38px;
+  max-height: 35px;
+}
+ul.payment_methods li.payment_method_sswps_fpx img {
+  max-width: 75px;
+  width: 75px;
+  max-height: 25px;
+}
+ul.payment_methods li.payment_method_sswps_klarna img {
+  max-width: 72px;
+  width: 72px;
+  max-height: 20px;
+}
+ul.payment_methods li.payment_method_sswps_klarna img[src*=klarna_pink] {
+  width: 56px;
+  height: 32px;
+  max-height: 32px;
+}
+ul.payment_methods li.payment_method_sswps_giropay img {
+  max-width: 65px;
+  width: 65px;
+  max-height: 28px;
+}
+ul.payment_methods li.payment_method_sswps_eps img {
+  max-width: 70px;
+  width: 70px;
+  max-height: 46px;
+}
+ul.payment_methods li.payment_method_sswps_multibanco img {
+  max-width: 48px;
+  width: 48px;
+  max-height: 48px;
+}
+ul.payment_methods li.payment_method_sswps_sepa img {
+  max-width: 67px;
+  width: 67px;
+  max-height: 18px;
+}
+ul.payment_methods li.payment_method_sswps_sofort img {
+  max-width: 70px;
+  width: 70px;
+  max-height: 21px;
+}
+ul.payment_methods li.payment_method_sswps_bancontact img {
+  width: 60px;
+  height: 42px;
+  max-width: 60px;
+  max-height: 42px;
+}
+ul.payment_methods li.payment_method_sswps_wechat label img {
+  max-width: 82px;
+  width: 82px;
+  max-height: 23px;
+}
+ul.payment_methods li.payment_method_sswps_alipay img {
+  max-width: 72px;
+  width: 72px;
+  height: 36px;
+  max-height: 36px;
+}
+ul.payment_methods li.payment_method_sswps_grabpay img {
+  max-width: 95px;
+  width: 95px;
+  max-height: 28px;
+}
+ul.payment_methods li.payment_method_sswps_oxxo img {
+  max-width: 52px;
+  width: 52px;
+  max-height: 24px;
+}
+
+li[class*=payment_method] input[type=radio] {
+  margin: 0 10px 0 5px;
+}
+li[class*=payment_method] input[type=radio] + label:not(.sswps-label-payment-type) {
+  margin: 0;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li[class*=payment_method_sswps_]:nth-child(n+2) {
+  margin: 0;
+}
+.woocommerce-checkout #sswps-payment-request-container.StripeElement {
+  width: 240px;
+  padding: 0px;
+}
+
+li.payment_method_sswps_cc .sswps-card-icons-container img.sswps-card-icon {
+  display: inline;
+  float: none;
+  height: 26px;
+  max-height: 26px;
+  max-width: 43px;
+  width: 43px;
+}
+li.payment_method_sswps_cc .sswps-card-icons-container img.sswps-card-icon:nth-child(2n+2) {
+  margin: 0px 2px;
+}
+li.payment_method_sswps_cc .sswps-card-icons-container img.sswps-card-icon.open.visa {
+  padding-top: 2px;
+}
+
+li.payment_method_sswps_payment_request {
+  display: none;
+}
+li.payment_method_sswps_payment_request .sswps-paymentRequest-icons-container img:not(.gpay) {
+  height: 25px;
+  max-height: 25px;
+  max-width: 25px;
+  width: 25px;
+}
+li.payment_method_sswps_payment_request label:first-of-type img[src*=googlepay_standard] {
+  width: 60px;
+  max-height: 35px;
+}
+li.payment_method_sswps_payment_request label:first-of-type img[src*=googlepay_round_outline] {
+  width: 56px;
+  max-height: 30px;
+}
+
+.payment_methods,
+.sswps_cc-new-method-container {
+  margin-bottom: 1em;
+}
+.payment_methods .sswps-save-source,
+.sswps_cc-new-method-container .sswps-save-source {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.payment_methods .StripeElement:not(.payment-type),
+.sswps_cc-container .StripeElement:not(.payment-type) {
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  transition: box-shadow 150ms ease;
+  -webkit-transition: box-shadow 150ms ease;
+}
+.payment_methods .sswps-save-source .save-source-label,
+.sswps_cc-container .sswps-save-source .save-source-label {
+  display: block;
+  padding: 0;
+  margin: 0 0 0px 5px;
+}
+.payment_methods .sswps-save-source input[type=checkbox][name=sswps_cc_save_source_key],
+.sswps_cc-container .sswps-save-source input[type=checkbox][name=sswps_cc_save_source_key] {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+.payment_methods .sswps-save-source label.checkbox,
+.sswps_cc-container .sswps-save-source label.checkbox {
+  position: relative;
+  padding: 0 !important;
+  margin: 0px;
+}
+.payment_methods .sswps-save-source input[type=checkbox]:checked + .save-source-checkbox:after,
+.sswps_cc-container .sswps-save-source input[type=checkbox]:checked + .save-source-checkbox:after {
+  left: 6px;
+  top: 2px;
+  width: 7px;
+  height: 12px;
+  border: solid #2196F3;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.payment_methods .save-source-checkbox,
+.sswps_cc-container .save-source-checkbox {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  background-color: white;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #bababa;
+}
+.payment_methods .save-source-checkbox:after,
+.sswps_cc-container .save-source-checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input.sswps-payment-type {
+  display: none !important;
+}
+input.sswps-payment-type:checked + label.sswps-label-payment-type:before {
+  background: #000;
+}
+
+input.sswps-klarna-category {
+  display: none !important;
+}
+input.sswps-klarna-category:checked + label.sswps-label-klarna-category:before {
+  background: #000;
+}
+
+body .wfacp_main_form.woocommerce .sswps-save-source label.checkbox {
+  padding: 0 !important;
+}
+
+label.sswps-label-payment-type {
+  margin-bottom: 1em;
+  display: block;
+  padding: 0 !important;
+  color: #000;
+}
+label.sswps-label-payment-type:before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #000;
+  background: #fff;
+  margin-left: 4px;
+  margin-right: 0.5em;
+  border-radius: 100%;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+label.sswps-label-payment-type:after {
+  content: none !important;
+  display: none !important;
+}
+
+input[type=radio] + label.sswps-label-payment-type {
+  margin-bottom: 1em;
+  display: block;
+  padding: 0 !important;
+  color: #000;
+}
+
+label.sswps-label-klarna-category {
+  margin-bottom: 1em;
+  display: block;
+  padding: 0 !important;
+  color: #000;
+}
+label.sswps-label-klarna-category:before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #000;
+  background: #fff;
+  margin-left: 4px;
+  margin-right: 0.5em;
+  border-radius: 100%;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.theme-flatsome div.sswps-saved-methods-container {
+  margin: 0 0 1em 0;
+}
+
+.sswps-saved-methods-container .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 8px;
+}
+.sswps-saved-methods-container .select2-container .select2-selection--single .sswps-select2-container {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  line-height: 42px !important;
+}
+
+.select2-results__options li.sswps-select2-container {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  line-height: 42px !important;
+}
+.select2-results__options li.sswps-select2-container:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 40px 24px;
+  width: 40px;
+  height: 42px;
+  display: inline-block;
+  margin-right: 8px;
+  background-position: center;
+}
+.select2-results__options li.sswps-select2-container.visa:before {
+  background-image: url(../img/cards/visa.svg);
+  background-image: url(../img/cards/visa.svg);
+}
+.select2-results__options li.sswps-select2-container.mastercard:before {
+  background-image: url(../img/cards/mastercard.svg);
+  background-image: url(../img/cards/mastercard.svg);
+  background-image: url(../img/cards/mastercard.svg);
+  background-image: url(../img/cards/mastercard.svg);
+}
+.select2-results__options li.sswps-select2-container.americanexpress:before {
+  background-image: url(../img/cards/amex.svg);
+  background-image: url(../img/cards/amex.svg);
+}
+.select2-results__options li.sswps-select2-container.amex:before {
+  background-image: url(../img/cards/amex.svg);
+  background-image: url(../img/cards/amex.svg);
+}
+.select2-results__options li.sswps-select2-container.discover:before {
+  background-image: url(../img/cards/discover.svg);
+  background-image: url(../img/cards/discover.svg);
+}
+.select2-results__options li.sswps-select2-container.dinersclub:before {
+  background-image: url(../img/cards/diners.svg);
+  background-image: url(../img/cards/diners.svg);
+}
+.select2-results__options li.sswps-select2-container.diners:before {
+  background-image: url(../img/cards/diners.svg);
+  background-image: url(../img/cards/diners.svg);
+}
+.select2-results__options li.sswps-select2-container.jcb:before {
+  background-image: url(../img/cards/jcb.svg);
+  background-image: url(../img/cards/jcb.svg);
+}
+.select2-results__options li.sswps-select2-container.sswps_sepa:before {
+  background-image: url(../img/sepa.svg);
+  background-image: url(../img/sepa.svg);
+}
+.select2-results__options li.sswps-select2-container.sswps-ach:before {
+  display: none;
+}
+.select2-results__options li.sswps-select2-container.sswps_becs:before {
+  display: none;
+}
+
+.select2-container .select2-selection--single .sswps-select2-container:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 40px 24px;
+  width: 40px;
+  height: 42px;
+  display: inline-block;
+  margin-right: 8px;
+  background-position: center;
+}
+.select2-container .select2-selection--single .sswps-select2-container.visa:before {
+  background-image: url(../img/cards/visa.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.mastercard:before {
+  background-image: url(../img/cards/mastercard.svg);
+  background-image: url(../img/cards/mastercard.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.americanexpress:before {
+  background-image: url(../img/cards/amex.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.amex:before {
+  background-image: url(../img/cards/amex.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.discover:before {
+  background-image: url(../img/cards/discover.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.dinersclub:before {
+  background-image: url(../img/cards/diners.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.diners:before {
+  background-image: url(../img/cards/diners.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.jcb:before {
+  background-image: url(../img/cards/jcb.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.sswps_sepa:before {
+  background-image: url(../img/sepa.svg);
+}
+.select2-container .select2-selection--single .sswps-select2-container.sswps_becs:before {
+  display: none;
+}
+.select2-container .select2-selection--single .sswps-select2-container.sswps-ach:before {
+  display: none;
+}
+
+#sswps-card-element {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+#sswps-card-element.payment-type {
+  height: 100%;
+  padding: 0px;
+}
+
+li.payment_method_sswps_googlepay {
+  display: none;
+}
+li.payment_method_sswps_googlepay label:first-of-type img {
+  width: 48px;
+  max-height: 35px;
+}
+li.payment_method_sswps_googlepay label:first-of-type img[src*=googlepay_standard] {
+  width: 60px;
+  max-height: 35px;
+}
+li.payment_method_sswps_googlepay label:first-of-type img[src*=googlepay_round_outline] {
+  width: 56px;
+  max-height: 30px;
+}
+
+li.payment_method_sswps_applepay {
+  display: none;
+}
+li.payment_method_sswps_applepay label:first-of-type img {
+  width: 49px;
+  max-height: 32px;
+}
+
+#place_order.sswps-hide {
+  position: absolute !important;
+  z-index: -1000 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+
+#payment #place_order.sswps-hide {
+  position: absolute !important;
+  z-index: -1000 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+#payment .payment_methods li #sswps_local_payment_sswps_wechat img {
+  max-height: 100%;
+  float: none;
+}
+
+.woocommerce-checkout-review-order #payment #place_order.sswps-hide {
+  position: absolute !important;
+  z-index: -1000 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+
+.sswps-product-checkout-container {
+  display: none;
+  width: 100%;
+}
+.sswps-product-checkout-container ul.sswps_product_payment_methods {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.sswps-product-checkout-container ul.sswps_product_payment_methods li[class*=payment_method_sswps_] {
+  margin: 0 0 1em 0;
+  list-style: none;
+}
+.sswps-product-checkout-container ul.sswps_product_payment_methods li[class*=payment_method_sswps_]:last-child {
+  margin: 0;
+}
+
+.sswps-product-checkout-container.bottom {
+  margin-top: 1em;
+}
+
+.sswps-product-checkout-container.top {
+  margin-bottom: 1em;
+}
+
+.sswps-product-checkout-container.active {
+  display: block;
+}
+
+.sswps-cart-checkout-container {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+.sswps-cart-checkout-container ul.sswps_cart_payment_methods {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin: 0;
+}
+.sswps-cart-checkout-container ul.sswps_cart_payment_methods li[class*=payment_method_sswps_] {
+  margin: 0 0 1em 0;
+  list-style: none;
+}
+.sswps-cart-checkout-container ul.sswps_cart_payment_methods li[class*=payment_method_sswps_]:last-child {
+  margin: 0;
+}
+.sswps-cart-checkout-container ul.sswps_cart_payment_methods.active {
+  margin-bottom: 1.5em;
+}
+.sswps-cart-checkout-container ul.sswps_cart_payment_methods.active li.sswps-payment-method.or {
+  display: block;
+  margin: 15px 0;
+}
+.sswps-cart-checkout-container ul.sswps_cart_payment_methods.active li.sswps-payment-method.or p {
+  margin: 0;
+}
+
+.sswps_product_payment_methods .gpay-button {
+  width: 100% !important;
+  min-width: 100%;
+  margin: 0;
+}
+.sswps_product_payment_methods .gpay-card-info-container {
+  width: 100% !important;
+  min-width: 100%;
+  margin: 0;
+}
+.sswps_product_payment_methods .disabled {
+  opacity: 0.45;
+}
+.sswps_product_payment_methods .payment_method_sswps_payment_request .StripeElement {
+  padding: 0px;
+  width: 100%;
+}
+
+.sswps_cart_payment_methods .gpay-button {
+  width: 100% !important;
+  min-width: 100%;
+  margin: 0;
+}
+.sswps_cart_payment_methods .gpay-card-info-container {
+  width: 100% !important;
+  min-width: 100%;
+  margin: 0;
+}
+.sswps_cart_payment_methods .payment_method_sswps_payment_request .StripeElement {
+  padding: 0px;
+  width: 100%;
+}
+
+.woocommerce-cart .stripe_cart_gateway_active .wc-proceed-to-checkout .checkout-button {
+  margin-bottom: 0px;
+}
+
+.stripe_cart_gateway_active .checkout-button {
+  margin-bottom: 0px;
+}
+
+.sswps-cart-or {
+  margin: 1em 0;
+  text-align: center;
+}
+
+li.sswps-payment-method.or {
+  display: none;
+}
+
+li[class*=payment_method_sswps_].active ~ li.sswps-payment-method.or {
+  display: block;
+  margin: 0;
+}
+
+li.payment_method_sswps_ach label:first-of-type img {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+li.payment_method_sswps_plaid label:first-of-type img {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+li.payment_method_sswps_affirm label:first-of-type img {
+  width: 65px;
+  height: 26px;
+}
+li.payment_method_sswps_affirm label[for=payment_method_sswps_affirm] {
+  display: flex;
+  align-items: center;
+}
+
+li.payment_method_sswps_blik label:first-of-type img {
+  width: 64px;
+}
+
+li.payment_method_sswps_konbini label:first-of-type img {
+  width: 52px;
+}
+
+li.payment_method_sswps_paynow label:first-of-type img {
+  width: 82px;
+}
+
+#sswps-affirm-message-container {
+  flex: 1 1 auto;
+  margin-left: 30px;
+  min-width: 200px;
+}
+#sswps-affirm-message-container .StripeElement {
+  width: 100%;
+}
+#sswps-affirm-message-container .__PrivateStripeElement {
+  width: 100%;
+}
+
+.gpay-button-container .gpay-button:hover {
+  background-origin: content-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sswps-checkout-banner-gateway .gpay-button:hover {
+  background-origin: content-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sswps-checkout-banner-gateway #sswps-payment-request-banner.StripeElement {
+  width: 100%;
+}
+
+.gpay-button:active {
+  background-origin: content-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.gpay-button:focus {
+  background-origin: content-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@supports (-webkit-appearance: -apple-pay-button) {
+  .apple-pay-button {
+    display: block;
+    -webkit-appearance: -apple-pay-button !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;
+    height: 40px;
+    max-height: 40px;
+  }
+  .apple-pay-button-black {
+    -apple-pay-button-style: black;
+  }
+  .apple-pay-button-white {
+    -apple-pay-button-style: white;
+  }
+  .apple-pay-button-white-with-line {
+    -apple-pay-button-style: white-outline;
+  }
+  .woocommerce-checkout-payment .apple-pay-button {
+    max-width: 240px;
+  }
+  body.single-product div.product form.cart .sswps_product_payment_methods .apple-pay-button {
+    max-width: 100%;
+  }
+}
+.sswps-banner-checkout {
+  display: none;
+  padding: 0;
+  position: relative;
+  margin: 1em 0;
+}
+.sswps-banner-checkout fieldset {
+  padding: 15px 25px 15px;
+  border: 1px solid #d1d1d1;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.sswps-banner-checkout fieldset legend {
+  margin: 0 auto;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+.sswps-banner-checkout span.banner-divider {
+  display: flex;
+  align-items: center;
+  top: -13px;
+  right: 0;
+  left: 0;
+  background: transparent;
+  white-space: nowrap;
+  font-size: 16px;
+}
+.sswps-banner-checkout span.banner-divider:before {
+  content: " ";
+  height: 1px;
+  background: #d1d1d1;
+  display: block;
+  width: 50%;
+  margin-right: 1rem;
+}
+.sswps-banner-checkout span.banner-divider:after {
+  content: " ";
+  height: 1px;
+  background: #d1d1d1;
+  display: block;
+  width: 50%;
+  margin-left: 1rem;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways li.sswps-checkout-banner-gateway {
+  margin: 0 auto;
+  display: none;
+  max-width: 240px;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways li.sswps-checkout-banner-gateway:first-child:not(.active) + li.sswps-checkout-banner-gateway.active {
+  margin: 0 auto;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways li.sswps-checkout-banner-gateway .gpay-button {
+  margin: 0;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways li.sswps-checkout-banner-gateway .gpay-card-info-container {
+  margin: 0;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways li.sswps-checkout-banner-gateway.active:nth-child(n+2) {
+  margin: 10px auto 0 auto;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways .gpay-button {
+  width: 100%;
+}
+.sswps-banner-checkout ul.sswps_checkout_banner_gateways .gpay-card-info-container {
+  width: 100%;
+}
+
+.sswps-banner-checkout.active {
+  display: block;
+}
+
+label[for=payment_method_sswps_bancontact] img {
+  width: 60px;
+  height: 42px;
+  max-width: 60px;
+  max-height: 42px;
+}
+
+li.banner_payment_method_sswps_payment_request .StripeElement {
+  padding: 0px;
+}
+
+.single-product .blockMsg {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#sswps-card {
+  position: absolute !important;
+  top: 50%;
+  right: 8px;
+  transform: translatey(-50%);
+  width: 23px;
+  height: 15px;
+  padding: 0px;
+  border: none;
+}
+
+#sswps-card.active {
+  width: 32px;
+  height: 20px;
+}
+
+input[id=stripe-postal-code]:focus {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+div.postalCode:focus {
+  outline: none;
+  border: none;
+}
+
+li[class*=payment_method_sswps] .select2-container .select2-selection--single {
+  height: 42px;
+  padding: 0 5px;
+}
+li[class*=payment_method_sswps] .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 42px;
+  top: 1px;
+  right: 1px;
+  transform: translateY(0);
+}
+
+.blockUI.blockMsg {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+#sswps-payment-request-container.disabled {
+  opacity: 0.45;
+}
+
+ul.sswps_cart_payment_methods li.sswps-payment-method button {
+  margin: 0;
+}
+
+ul.sswps_product_payment_methods li[class*=payment_method_sswps_] button {
+  margin: 0;
+}
+
+ul.sswps_checkout_banner_gateways li button {
+  margin: 0;
+}
+
+div[id*=sswps_local_payment_sswps_].StripeElement {
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+#sswps_local_payment_sswps_wechat img {
+  max-height: 100%;
+  float: none;
+}
+
+.qrcode-message {
+  margin: 10px 0 0 0;
+}
+
+#sswps_local_payment_sswps_sepa {
+  padding: 10px 12px;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+}
+
+#sswps_local_payment_sswps_becs {
+  padding: 10px 12px;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+}
+
+.sswps-local-desc.sswps_sepa {
+  margin: 10px 0;
+}
+
+.sswps-local-desc.sswps_becs {
+  margin: 10px 0;
+}
+
+.sswps-clear {
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.sswps-gateway-desc {
+  margin-top: 10px;
+}
+.sswps-gateway-desc p {
+  margin: 0;
+}
+
+#sswps_local_payment_sswps_klarna {
+  margin-top: 10px;
+}
+#sswps_local_payment_sswps_klarna .stripe-klarna-categories {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+li[class*=payment_method_sswps_] div.sswps-gateway-container.has_tokens {
+  margin-top: 10px;
+}
+
+#sswps-card-element.StripeElement--webkit-autofill {
+  background-color: transparent !important;
+}
+
+li.payment_method_sswps_klarna {
+  display: none;
+}
+
+li.payment_method_sswps_alipay {
+  display: none;
+}
+
+li.payment_method_sswps_bancontact {
+  display: none;
+}
+
+li.payment_method_sswps_becs {
+  display: none;
+}
+
+li.payment_method_sswps_eps {
+  display: none;
+}
+
+li.payment_method_sswps_fpx {
+  display: none;
+}
+
+li.payment_method_sswps_giropay {
+  display: none;
+}
+
+li.payment_method_sswps_ideal {
+  display: none;
+}
+
+li.payment_method_sswps_multibanco {
+  display: none;
+}
+
+li.payment_method_sswps_p24 {
+  display: none;
+}
+
+li.payment_method_sswps_sepa {
+  display: none;
+}
+
+li.payment_method_sswps_sofort {
+  display: none;
+}
+
+li.payment_method_sswps_wechat {
+  display: none;
+}
+
+.widget_shopping_cart_content .sswps-mini-cart-payment-methods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.widget_shopping_cart_content .sswps-mini-cart-payment-methods li {
+  margin: 0;
+}
+.widget_shopping_cart_content a.sswps-gpay-mini-cart {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+.widget_shopping_cart_content a.sswps-applepay-mini-cart {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+.widget_shopping_cart_content a.sswps-payment-request-mini-cart {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+a.sswps-gpay-mini-cart .gpay-button {
+  width: 100%;
+  margin: 0;
+}
+a.sswps-gpay-mini-cart .gpay-card-info-container a.sswps-applepay-mini-cart .apple-pay-button {
+  width: 100%;
+  margin: 0;
+}
+
+.sswps-payment-request-mini-cart.StripeElement {
+  padding: 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+.sswps-payment-request-mini-cart.StripeElement .__PrivateStripeElement {
+  width: 100%;
+}
+
+.sswps-minicart-overlay {
+  display: none !important;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.sswps-minicart-overlay.active {
+  display: block !important;
+  z-index: 9999;
+}
+
+.sswps-klarna-loader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  transform: scale(0.65);
+}
+.sswps-klarna-loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  animation: klarna-payments-loader 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.sswps-klarna-loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.sswps-klarna-loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.sswps-klarna-loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+li.payment_method_sswps_googlepay.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_applepay.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_payment_request.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_alipay.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_bancontact.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_eps.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_giropay.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_grabpay.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_multibanco.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_p24.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_sofort.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+li.payment_method_sswps_oxxo.sswps-no-desc .payment_box.sswps-no-methods {
+  padding: 0;
+  margin: 0;
+}
+
+.sswps-shortcode-cart-buttons .sswps-cart-checkout-container ul.sswps_cart_payment_methods.active li.sswps-payment-method.or {
+  display: none;
+}
+
+label[for=payment_method_sswps_afterpay] > #sswps-afterpay-msg {
+  display: inline-block;
+  float: right;
+}
+
+.payment_method_sswps_afterpay #sswps-afterpay-msg .__PrivateStripeElement p {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+.payment_method_sswps_afterpay #sswps-afterpay-msg .__PrivateStripeElement p .AfterpayMessage-logo {
+  vertical-align: middle;
+}
+.payment_method_sswps_afterpay #sswps-afterpay-msg .AfterpayMessage-logoSvg {
+  min-width: 64px;
+  max-width: 90px;
+}
+.payment_method_sswps_afterpay #sswps_local_payment_sswps_afterpay.ineligible {
+  display: none;
+}
+.payment_method_sswps_afterpay .sswps-afterpay__offsite {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.payment_method_sswps_afterpay .sswps-afterpay__offsite img {
+  display: inline-block;
+}
+.payment_method_sswps_afterpay .sswps-afterpay__offsite p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#sswps-afterpay-cart-container {
+  text-align: left;
+}
+#sswps-afterpay-cart-container #sswps-afterpay-cart-msg .__PrivateStripeElement p {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+#sswps-afterpay-cart-container #sswps-afterpay-cart-msg .AfterpayMessage-logoSvg {
+  min-width: 64px;
+  max-width: 90px;
+}
+#sswps-afterpay-cart-container td {
+  border: none;
+}
+#sswps-afterpay-cart-container td::before {
+  content: "";
+}
+
+#sswps-afterpay-product-msg {
+  font-size: 14px;
+}
+#sswps-afterpay-product-msg .__PrivateStripeElement p {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+#sswps-afterpay-product-msg .AfterpayMessage-logoSvg {
+  max-width: 80px;
+  min-width: 64px;
+}
+
+#sswps-afterpay-cart-msg .__PrivateStripeElement p .AfterpayMessage-logo {
+  vertical-align: middle;
+}
+
+.sswps-offsite-notice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  width: 100%;
+}
+.sswps-offsite-notice-container .sswps-offsite-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+}
+.sswps-offsite-notice-container .sswps-offsite-notice img {
+  max-width: 105px;
+}
+.sswps-offsite-notice-container .sswps-offsite-notice p {
+  font-size: 14px;
+}
+
+#sswps-affirm-cart-container td::before {
+  content: "";
+}
+
+.AfterpayMessage-logoSvg {
+  display: inline-block;
+}
+
+.sswps-afterpay-minicart-msg {
+  font-size: 0.8em;
+}
+
+.payment_method_sswps_afterpay.afterpay-ineligible {
+  display: none;
+}
+
+.afterpay-ineligible {
+  display: none;
+}
+
+.woocommerce-mini-cart__buttons .gpay-card-info-container {
+  min-width: 100%;
+  margin: 0;
+}
+
+.sswps-boleto__description {
+  margin-top: 10px;
+}
+.sswps-boleto__description div {
+  display: flex;
+  align-items: center;
+}
+.sswps-boleto__description div label {
+  margin: 0;
+}
+
+.sswps-klarna__testmode {
+  margin-top: 10px;
+}
+.sswps-klarna__testmode label {
+  display: inline-block;
+}
+
+div.payment_method_sswps_cc > .woocommerce-NoticeGroup {
+  margin-bottom: 10px;
+}
+
+div.payment_method_sswps_cc.custom-form__bootstrap > .woocommerce-NoticeGroup {
+  margin-bottom: 20px;
+}
+
+.sswps-installment-container {
+  margin-top: 15px;
+}
+.sswps-installment-container p {
+  margin: 0;
+}
+.sswps-installment-container label.installment-label {
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sswps-installment-container .sswps-installment-options.loading-installments {
+  opacity: 0.4;
+}
+
+.sswps-installment-loader__container {
+  flex: 1 1 auto;
+}
+.sswps-installment-loader__container .sswps-installment-loader {
+  transform: scale(0.55);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -2px;
+}
+
+.sswps-installment-loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  animation: installment-loader 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.sswps-installment-loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.sswps-installment-loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.sswps-installment-loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+#sswps-ach-container .sswps-ach__mandate {
+  margin: 10px 0;
+}
+
+.gpay-button-fill-new-style.gpay-button-container > .gpay-button.pay {
+  padding: 9px 24px;
+}
+
+.gpay-button-fill-new-style .gpay-button.order {
+  padding: 9px 24px;
+}
+.gpay-button-fill-new-style .gpay-button.checkout {
+  padding: 9px 24px;
+}
+.gpay-button-fill-new-style .gpay-button.pay {
+  padding: 9px 24px;
+}
+.gpay-button-fill-new-style .gpay-button.subscribe {
+  padding: 9px 24px;
+}
+
+.stripe-link-icon-container {
+  position: relative;
+}
+
+.sswps-link-icon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+div.product .sswps-bnpl-product-message {
+  margin-bottom: 0.8em;
+}
+
+.sswps-shop-message-container.sswps_affirm {
+  width: 100%;
+}
+
+.sswps-blik-code {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.sswps-blik-code .woocommerce-input-wrapper .input-text.blik-code {
+  padding: 8px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+.sswps-blik-code .form-row {
+  padding: 0 8px;
+}
+
+.blik-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 1.2em;
+}
+.blik-timer-container #blik_timer {
+  font-size: 2em;
+  margin-left: 12px;
+}
+
+.sswps-konbini-instructions ol {
+  margin: 0;
+  padding: 0;
+}
+
+.sswps-paynow-instructions ol {
+  margin: 0;
+  padding: 0;
+}
+
+#sswps_local_payment_sswps_blik ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=stripe.css.map */

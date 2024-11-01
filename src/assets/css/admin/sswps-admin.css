@@ -1,0 +1,695 @@
+/* -----------------------------------------------------------------------------
+ *
+ * Utilities
+ *
+ * This file is just a clearing-house.
+ * Make partials (start with an underscore) for any actual css code.
+ *
+ * ----------------------------------------------------------------------------- */
+/* Variables - needed everywhere. */
+/* Mixins */
+/* -----------------------------------------------------------------------------
+ * Body
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Desktop Body 1
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Desktop Body 2
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Desktop Body 3
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Mobile Body 1
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Mobile Body 2
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Mobile Body 3
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 1
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 2
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 3
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 4
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 5
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 6
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 7
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Heading 8
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Anchor - Default
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Anchor - Alt
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin Alt
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Button - Global
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Button - Solid
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Button - Link
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Button - Border
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Button - Border Small
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Button - Icon Border
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Sliders & Toggles
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Sliders
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Hidden: Hide from both screenreaders and browsers
+ * @author: h5bp.com/u
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Visually Hide: Hide only visually, but have it available for screenreaders
+ * @author: h5bp.com/v
+ * ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * Visually Show: Show element after has been hidden with %visually-hide
+ * ----------------------------------------------------------------------------- */
+/* Variables - needed for structure. */
+:root {
+  /* -----------------------------------------------------------------------------
+   * Spacers
+   * ----------------------------------------------------------------------------- */
+  --sswp-spacer-0: 4px;
+  --sswp-spacer-1: 8px;
+  --sswp-spacer-2: 12px;
+  --sswp-spacer-3: 16px;
+  --sswp-spacer-4: 20px;
+  --sswp-spacer-5: 24px;
+  --sswp-spacer-6: 28px;
+  --sswp-spacer-7: 32px;
+  --sswp-spacer-8: 40px;
+  --sswp-spacer-9: 48px;
+  --sswp-spacer-10: 56px;
+  --sswp-spacer-11: 64px;
+  --sswp-spacer-12: 80px;
+  --sswp-spacer-13: 96px;
+  --sswp-spacer-14: 160px;
+  --sswp-spacer-admin-0: 10px;
+  --sswp-spacer-admin-1: 20px;
+}
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Layers of z-index
+   * ----------------------------------------------------------------------------- */
+  --sswp-z-index-spinner-container: 100;
+  --sswp-z-index-views-selector: 30;
+  --sswp-z-index-dropdown: 30;
+  --sswp-z-index-events-bar-button: 20;
+  --sswp-z-index-search: 10;
+  --sswp-z-index-filters: 9;
+  --sswp-z-index-scroller: 7;
+  --sswp-z-index-week-event-hover: 5;
+  --sswp-z-index-map-event-hover: 5;
+  --sswp-z-index-map-event-hover-actions: 6;
+  --sswp-z-index-multiday-event: 5;
+  --sswp-z-index-multiday-event-bar: 2;
+}
+
+:root {
+  /* --------------------------------------------------------
+   * Colors - Brand
+   * -------------------------------------------------------- */
+  --sswp-color-brand-primary: #699bff;
+  --sswp-color-brand-secondary: #ffff99;
+  --sswp-color-brand-stripe: #635bff;
+  /* --------------------------------------------------------
+   * Colors - Mode
+   * -------------------------------------------------------- */
+  --sswp-color-mode-live: #00A32A;
+  --sswp-color-mode-test: #c84801;
+  --sswp-color-error: #d63638;
+  /* --------------------------------------------------------
+   * Colors - Typography
+   * -------------------------------------------------------- */
+  --sswp-color-text-primary: #1d2327;
+  --sswp-color-text-primary-light: #646970;
+  --sswp-color-text-secondary: #5d5d5d;
+  --sswp-color-text-disabled: #d5d5d5;
+  /* -----------------------------------------------------------------------------
+   * Colors - UI Base
+   * ----------------------------------------------------------------------------- */
+  --sswp-color-brand-primary-hover: #4641b9;
+  --sswp-color-brand-primary-active: #383395;
+  --sswp-color-brand-primary-background: rgba(40, 81, 163, 0.07);
+  --sswp-color-accent-primary: #ffff99;
+  --sswp-color-accent-primary-hover: rgba(255, 255, 153, 0.8);
+  --sswp-color-accent-primary-active: rgba(255, 255, 153, 0.9);
+  --sswp-color-accent-primary-background: rgba(255, 255, 153, 0.07);
+  --sswp-color-accent-secondary: #ffb6c1;
+  --sswp-color-accent-secondary-hover: rgba(255, 182, 193, 0.8);
+  --sswp-color-accent-secondary-active: rgba(255, 182, 193, 0.9);
+  --sswp-color-accent-secondary-background: rgba(255, 182, 193, 0.07);
+  /* -----------------------------------------------------------------------------
+   * Colors - Buttons
+   * ----------------------------------------------------------------------------- */
+  --sswp-color-button-primary: var(--sswp-color-brand-primary);
+  --sswp-color-button-primary-hover: var(--sswp-color-brand-primary-hover);
+  --sswp-color-button-primary-active: var(--sswp-color-brand-primary-active);
+  --sswp-color-button-primary-background: var(--sswp-color-brand-primary-background);
+  --sswp-color-button-secondary: #f5f5f5;
+  --sswp-color-button-secondary-border: #bbb;
+  --sswp-color-button-secondary-hover: #d5d5d5;
+  --sswp-color-button-secondary-active: #ddd;
+  --sswp-color-button-disconnect: #d63638;
+  --sswp-color-button-disconnect-hover: rgba(179, 45, 46, 1);
+  --sswp-color-button-disconnect-active: rgba(179, 45, 46, 1);
+  --sswp-color-button-disconnect-background: rgba(179, 45, 46, 0.07);
+  /* -----------------------------------------------------------------------------
+   * Colors - Borders & Misc
+   * ----------------------------------------------------------------------------- */
+  --sswp-color-border-default: #c3c4c7;
+  --sswp-color-border-secondary: #e4e4e4;
+  --sswp-color-border-light: #ebebeb;
+  --sswp-color-border-tertiary: #7d7d7d;
+  --sswp-color-border-hover: #5d5d5d;
+  --sswp-color-border-active: #141827;
+  --sswp-color-background: #fff;
+  --sswp-color-background-events: transparent;
+  --sswp-color-background-transparent: rgba(255, 255, 255, 0.6);
+  --sswp-color-background-secondary: #f7f6f6;
+  --sswp-color-background-messages: rgba(20, 24, 39, 0.07);
+  --sswp-color-background-secondary-hover: #f0eeee;
+  --sswp-color-background-error: rgba(218, 57, 77, 0.08);
+  --sswp-color-box-shadow: rgba(#000, 0.14);
+  --sswp-color-box-shadow-secondary: rgba(#000, 0.1);
+  --sswp-color-scroll-track: rgba(#000, 0.25);
+  --sswp-color-scroll-bar: rgba(#000, 0.5);
+  --sswp-color-background-dark: #2c3338;
+  /* -----------------------------------------------------------------------------
+   * Colors - Tabs
+   * ----------------------------------------------------------------------------- */
+  --sswp-color-tab-active: #fff;
+}
+
+/* Variables - needed for styling. */
+:root {
+  /* -----------------------------------------------------------------------------
+   * Borders - Radius
+   * ----------------------------------------------------------------------------- */
+  --sswp-border-radius-default: 4px;
+}
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Box Shadows
+   * ----------------------------------------------------------------------------- */
+  --sswp-box-shadow-default: 0 2px 5px 0 var(--sswp-color-box-shadow);
+  --sswp-box-shadow-tooltip: 0 2px 12px 0 var(--sswp-color-box-shadow);
+  --sswp-box-shadow-card: 0 1px 6px 2px var(--sswp-color-box-shadow);
+}
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Forms - Colors
+   * ----------------------------------------------------------------------------- */
+  --sswp-form-color-background: var(--sswp-color-background);
+  --sswp-form-color-border-default: var(--sswp-color-text-primary);
+  --sswp-form-color-border-active: var(--sswp-color-accent-secondary);
+  --sswp-form-color-border-secondary: var(--sswp-color-border-tertiary);
+  --sswp-form-color-accent-primary: var(--sswp-color-accent-primary);
+  /* -----------------------------------------------------------------------------
+   * Forms - Box Shadows
+   * ----------------------------------------------------------------------------- */
+  --sswp-form-box-shadow-default: var(--sswp-box-shadow-default);
+  /* -----------------------------------------------------------------------------
+   * For backwards Compatibility with plugins that have not been updated yet.
+   * Remove these once all plugins have been updated to use the namespaced vars.
+   * ----------------------------------------------------------------------------- */
+  /* -----------------------------------------------------------------------------
+   * Forms - Colors
+   * ----------------------------------------------------------------------------- */
+  --form-color-background: var(--sswp-form-color-background);
+  --form-color-border-default: var(--sswp-form-color-border-default);
+  --form-color-border-active: var(--sswp-form-color-border-active);
+  --form-color-border-secondary: var(--sswp-form-color-border-secondary);
+  --form-color-accent-primary: var(--sswp-form-color-accent-primary);
+  /* -----------------------------------------------------------------------------
+   * Forms - Box Shadows
+   * ----------------------------------------------------------------------------- */
+  --form-box-shadow-default: var(--sswp-form-box-shadow-default);
+}
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Opacities
+   * ----------------------------------------------------------------------------- */
+  --sswp-opacity-background: 0.07;
+  --sswp-opacity-select-highlighted: 0.3;
+  --sswp-opacity-icon-hover: 0.8;
+  --sswp-opacity-icon-active: 0.9;
+  --sswp-opacity-default: 1;
+}
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Transitions
+   * ----------------------------------------------------------------------------- */
+  --sswp-transition: all 0.2s ease;
+  --sswp-transition-background-color: background-color 0.2s ease;
+  --sswp-transition-color-border-color: color 0.2s ease, border-color 0.2s ease;
+  --sswp-transition-transform: transform 0.2s ease;
+  --sswp-transition-border-color: border-color 0.2s ease;
+  --sswp-transition-color: color 0.2s ease;
+  --sswp-transition-opacity: opacity 0.2s ease;
+}
+
+:root {
+  /* -----------------------------------------------------------------------------
+   * Font Stacks
+   * ----------------------------------------------------------------------------- */
+  --sswp-font-family-sans-serif: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
+  /* -----------------------------------------------------------------------------
+   * Font Weights
+   * ----------------------------------------------------------------------------- */
+  --sswp-font-weight-regular: 400;
+  --sswp-font-weight-bold: 700;
+  /* -----------------------------------------------------------------------------
+   * Font Sizing
+   * ----------------------------------------------------------------------------- */
+  --sswp-font-size-0: 11px;
+  --sswp-font-size-1: 12px;
+  --sswp-font-size-2: 14px;
+  --sswp-font-size-3: 16px;
+  --sswp-font-size-4: 18px;
+  --sswp-font-size-5: 20px;
+  --sswp-font-size-6: 22px;
+  --sswp-font-size-7: 24px;
+  --sswp-font-size-8: 28px;
+  --sswp-font-size-9: 32px;
+  --sswp-font-size-10: 42px;
+  /* -----------------------------------------------------------------------------
+   * Line Height
+   * ----------------------------------------------------------------------------- */
+  --sswp-line-height-0: 1.38;
+  --sswp-line-height-1: 1.42;
+  --sswp-line-height-2: 1.5;
+  --sswp-line-height-3: 1.62;
+}
+
+.sswp-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.sswps-admin__settings-header {
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: var(--sswp-spacer-3) 0;
+}
+@media only screen and (min-width: 768px) {
+  .sswps-admin__settings-header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.sswps-admin__settings-header-logo-group {
+  margin-bottom: var(--sswp-spacer-3);
+}
+@media only screen and (min-width: 768px) {
+  .sswps-admin__settings-header-logo-group {
+    margin-bottom: 0;
+  }
+}
+
+.sswps-admin__settings-header-logo {
+  border-radius: 4px;
+  max-width: 60px;
+  vertical-align: middle;
+  width: 60px;
+}
+
+.sswps-admin__settings-header-stripe {
+  margin-left: 0.5em;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.sswps-admin__settings-header-logo-separator {
+  font-size: var(--sswp-font-size-3);
+  font-weight: bold;
+  margin: 0 var(--sswp-spacer-1) 0 var(--sswp-spacer-3);
+  vertical-align: middle;
+}
+
+.sswps-admin__settings-header-nav {
+  flex-grow: 1;
+}
+@media only screen and (min-width: 768px) {
+  .sswps-admin__settings-header-nav {
+    margin-left: var(--sswp-spacer-7);
+    text-align: right;
+  }
+}
+
+.sswps-admin__nav {
+  background-color: var(--sswp-color-background-dark);
+  border: 1px solid var(--sswp-color-border-default);
+  border-bottom-width: 0px;
+  border-top-left-radius: var(--sswp-border-radius-default);
+  border-top-right-radius: var(--sswp-border-radius-default);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sswps-admin__nav-tab {
+  align-items: flex-start;
+  border-top-left-radius: var(--sswp-border-radius-default);
+  border-top-right-radius: var(--sswp-border-radius-default);
+  color: #eee;
+  display: inline-block;
+  flex-direction: row;
+  font-weight: bold;
+  gap: 10px;
+  padding: var(--sswp-spacer-2) var(--sswp-spacer-3);
+  text-decoration: none;
+}
+.sswps-admin__nav-tab:active, .sswps-admin__nav-tab:focus, .sswps-admin__nav-tab:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.sswps-admin__nav-tab--active {
+  background-color: var(--sswp-color-tab-active);
+  color: var(--sswp-color-text-primary);
+}
+.sswps-admin__nav-tab--active:active, .sswps-admin__nav-tab--active:focus, .sswps-admin__nav-tab--active:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.sswps-admin__advanced-nav {
+  background: #f5f5f5;
+  border: 1px solid var(--sswp-color-border-default);
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+.sswps-admin__advanced-nav-link {
+  display: inline-block;
+  padding: var(--sswp-spacer-2) var(--sswp-spacer-3);
+  text-decoration: none;
+}
+.sswps-admin__advanced-nav-link:active, .sswps-admin__advanced-nav-link:hover {
+  text-decoration: underline;
+}
+
+.sswps-admin__advanced-nav-link--active {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+.sswps-admin__advanced-nav-link--active:active, .sswps-admin__advanced-nav-link--active:hover {
+  color: #000;
+}
+
+.sswps-admin__settings {
+  background: #fff;
+  border: 1px solid var(--sswp-color-border-default);
+  border-top-width: 0px;
+  padding: var(--sswp-spacer-5) var(--sswp-spacer-5);
+}
+.woocommerce .sswps-admin__settings > h2, .woocommerce .sswps-admin__settings > h3.wc-settings-sub-title {
+  font-size: var(--sswp-font-size-7);
+  line-height: var(--sswp-line-height-1);
+}
+.woocommerce .sswps-admin__settings > h2:first-child, .woocommerce .sswps-admin__settings > h3.wc-settings-sub-title:first-child {
+  margin-top: 0;
+}
+.woocommerce .sswps-admin__settings .form-table {
+  margin-bottom: var(--sswp-spacer-9);
+}
+.woocommerce .sswps-admin__settings .form-table:first-child {
+  display: none;
+}
+.woocommerce .sswps-admin__settings .form-table:first-child + h3.wc-settings-sub-title {
+  margin-top: 0;
+}
+.woocommerce .sswps-admin__settings .form-table:last-child {
+  margin-bottom: 0;
+}
+.woocommerce .sswps-admin__settings p {
+  max-width: 790px;
+}
+.sswps-admin__settings > p {
+  background: #f5f5f5;
+  margin: 0;
+  padding: var(--sswp-spacer-4);
+}
+.sswps-admin__settings > p + p {
+  padding-top: 0;
+}
+.woocommerce .sswps-admin__settings > p + .form-table {
+  margin-top: 1em;
+}
+
+span.sswps-webhook-info--alert {
+  background: #fffed0;
+  border: 1px dotted #a3a266;
+  display: inline-block;
+  padding: var(--sswp-spacer-3);
+}
+
+.woocommerce .sswps-admin__settings .form-table .sswps-field--required {
+  border: 1px solid var(--sswp-color-error);
+  box-shadow: 0 0 0 4px rgba(214, 54, 56, 0.1);
+}
+
+.sswps-mode__message--live {
+  color: var(--sswp-color-mode-live);
+}
+
+.sswps-mode__message--test {
+  color: var(--sswp-color-mode-test);
+}
+
+.woocommerce .sswps-mode__live .select2-container .select2-selection,
+.sswps-mode__live select {
+  border-color: var(--sswp-color-mode-live);
+}
+
+.woocommerce .sswps-mode__test .select2-container .select2-selection,
+.sswps-mode__test select {
+  border-color: var(--sswp-color-mode-test);
+}
+
+.sswps-mode__pill {
+  background-color: var(--sswp-color-mode-pill);
+  border-radius: var(--sswp-border-radius-default);
+  color: #fff;
+  margin-right: var(--sswp-spacer-1);
+  padding: var(--sswp-spacer-0) var(--sswp-spacer-1);
+  text-align: center;
+}
+.sswps-mode__pill a {
+  color: #fff;
+  text-decoration: none;
+}
+.sswps-mode__pill a:hover {
+  text-decoration: underline;
+}
+
+.sswps-mode__pill--setup-needed {
+  background-color: var(--sswp-color-error);
+}
+
+.sswps-mode__pill--live {
+  background-color: var(--sswp-color-mode-live);
+}
+
+.sswps-mode__pill--test {
+  background-color: var(--sswp-color-mode-test);
+}
+
+.sswp-button--primary {
+  color: var(--sswp-color-text-primary);
+  font-family: var(--sswp-font-family-sans-serif);
+  font-size: var(--sswp-font-size-2);
+  line-height: var(--sswp-line-height-3);
+  font-weight: var(--sswp-font-weight-regular);
+  font-weight: var(--sswp-font-weight-bold);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  padding: 0;
+  text-decoration: none;
+  width: auto;
+  border-radius: var(--sswp-border-radius-default);
+  color: var(--sswp-color-background);
+  text-align: center;
+  transition: var(--sswp-transition-background-color);
+  background: var(--sswp-color-brand-stripe);
+  padding: var(--sswp-spacer-2) var(--sswp-spacer-4);
+}
+.sswp-button--primary:active {
+  background: var(--sswp-color-brand-primary-active);
+  color: #fff;
+}
+.sswp-button--primary:hover {
+  background: var(--sswp-color-brand-primary-hover);
+  color: #fff;
+}
+
+.sswp-button--disconnect {
+  color: var(--sswp-color-text-primary);
+  font-family: var(--sswp-font-family-sans-serif);
+  font-size: var(--sswp-font-size-2);
+  line-height: var(--sswp-line-height-3);
+  font-weight: var(--sswp-font-weight-regular);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  padding: 0;
+  text-decoration: none;
+  width: auto;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: underline;
+  transition: var(--sswp-transition-color);
+  color: var(--sswp-color-button-disconnect);
+}
+.sswp-button--disconnect:hover, .sswp-button--disconnect:focus {
+  background-color: transparent;
+}
+.sswp-button--disconnect:active {
+  color: var(--sswp-color-button-disconnect-active);
+}
+.sswp-button--disconnect:hover {
+  color: var(--sswp-color-button-disconnect-active);
+}
+
+.sswp-button--secondary {
+  color: var(--sswp-color-text-primary);
+  font-family: var(--sswp-font-family-sans-serif);
+  font-size: var(--sswp-font-size-2);
+  line-height: var(--sswp-line-height-3);
+  font-weight: var(--sswp-font-weight-regular);
+  font-weight: var(--sswp-font-weight-bold);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  padding: 0;
+  text-decoration: none;
+  width: auto;
+  border-radius: var(--sswp-border-radius-default);
+  color: var(--sswp-color-background);
+  text-align: center;
+  transition: var(--sswp-transition-background-color);
+  background: var(--sswp-color-button-secondary);
+  border: 1px solid var(--sswp-color-button-secondary-border);
+  color: var(--sswp-color-text-primary);
+  margin-right: var(--sswp-spacer-2);
+  padding: var(--sswp-spacer-2) var(--sswp-spacer-4);
+}
+.sswp-button--secondary:active {
+  background-color: var(--sswp-color-button-secondary-active);
+}
+.sswp-button--secondary:hover {
+  background-color: var(--sswp-color-button-secondary-active);
+}
+
+.sswp-button--connection-test {
+  margin-right: var(--sswp-spacer-2);
+}
+
+.sswps-admin__content-box {
+  background-color: #fff;
+  border-radius: var(--sswp-border-radius-default);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 0 auto var(--sswp-spacer-5) auto;
+  max-width: 100%;
+  padding: var(--sswp-spacer-5);
+  width: 790px;
+}
+.sswps-admin__content-box h2 {
+  flex-grow: 1;
+  margin-top: 0;
+}
+.sswps-admin__content-box header {
+  display: flex;
+  flex-direction: row;
+}
+.sswps-admin__content-box .sswp-button--primary {
+  margin-right: var(--sswp-spacer-1);
+}
+
+.sswps-admin__content-box-actions a,
+.sswps-admin__content-box-actions fieldset {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sswps-admin__content-box-actions p,
+.sswps-admin__content-box-actions legend, .sswps-admin__content-box-actions > label {
+  display: none;
+}
+
+.sswps-admin__content-box .sswps-mode__pill {
+  margin-right: 0;
+}
+
+.sswps-admin__page {
+  padding: 0 var(--sswp-spacer-admin-0) var(--sswp-spacer-5) 0;
+}
+@media only screen and (min-width: 960px) {
+  .sswps-admin__page {
+    padding-right: var(--sswp-spacer-admin-1);
+  }
+}
+
+.sswps-admin__page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .sswps-admin__page-content {
+    padding-top: var(--sswp-spacer-5);
+  }
+}
+
+/*# sourceMappingURL=sswps-admin.css.map */
